@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9961C66B2076B322008EC7C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961C66A2076B322008EC7C5 /* AppDelegate.swift */; };
+		9961C66D2076B322008EC7C5 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961C66C2076B322008EC7C5 /* RootViewController.swift */; };
+		9961C66F2076B322008EC7C5 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961C66E2076B322008EC7C5 /* DataViewController.swift */; };
+		9961C6712076B322008EC7C5 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961C6702076B322008EC7C5 /* ModelController.swift */; };
+		9961C6742076B322008EC7C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9961C6722076B322008EC7C5 /* Main.storyboard */; };
+		9961C6762076B322008EC7C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9961C6752076B322008EC7C5 /* Assets.xcassets */; };
+		9961C6792076B322008EC7C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9961C6772076B322008EC7C5 /* LaunchScreen.storyboard */; };
+		9961C6842076B322008EC7C5 /* MarketMateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961C6832076B322008EC7C5 /* MarketMateTests.swift */; };
+		9961C68F2076B322008EC7C5 /* MarketMateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961C68E2076B322008EC7C5 /* MarketMateUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9961C6802076B322008EC7C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9961C65F2076B322008EC7C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9961C6662076B322008EC7C5;
+			remoteInfo = MarketMate;
+		};
+		9961C68B2076B322008EC7C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9961C65F2076B322008EC7C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9961C6662076B322008EC7C5;
+			remoteInfo = MarketMate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9961C6672076B322008EC7C5 /* MarketMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9961C66A2076B322008EC7C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9961C66C2076B322008EC7C5 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		9961C66E2076B322008EC7C5 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		9961C6702076B322008EC7C5 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
+		9961C6732076B322008EC7C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9961C6752076B322008EC7C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9961C6782076B322008EC7C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9961C67A2076B322008EC7C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9961C67F2076B322008EC7C5 /* MarketMateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarketMateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9961C6832076B322008EC7C5 /* MarketMateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketMateTests.swift; sourceTree = "<group>"; };
+		9961C6852076B322008EC7C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9961C68A2076B322008EC7C5 /* MarketMateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarketMateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9961C68E2076B322008EC7C5 /* MarketMateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketMateUITests.swift; sourceTree = "<group>"; };
+		9961C6902076B322008EC7C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9961C6642076B322008EC7C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9961C67C2076B322008EC7C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9961C6872076B322008EC7C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9961C65E2076B322008EC7C5 = {
+			isa = PBXGroup;
+			children = (
+				9961C6692076B322008EC7C5 /* MarketMate */,
+				9961C6822076B322008EC7C5 /* MarketMateTests */,
+				9961C68D2076B322008EC7C5 /* MarketMateUITests */,
+				9961C6682076B322008EC7C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9961C6682076B322008EC7C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9961C6672076B322008EC7C5 /* MarketMate.app */,
+				9961C67F2076B322008EC7C5 /* MarketMateTests.xctest */,
+				9961C68A2076B322008EC7C5 /* MarketMateUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9961C6692076B322008EC7C5 /* MarketMate */ = {
+			isa = PBXGroup;
+			children = (
+				9961C66A2076B322008EC7C5 /* AppDelegate.swift */,
+				9961C66C2076B322008EC7C5 /* RootViewController.swift */,
+				9961C66E2076B322008EC7C5 /* DataViewController.swift */,
+				9961C6702076B322008EC7C5 /* ModelController.swift */,
+				9961C6722076B322008EC7C5 /* Main.storyboard */,
+				9961C6752076B322008EC7C5 /* Assets.xcassets */,
+				9961C6772076B322008EC7C5 /* LaunchScreen.storyboard */,
+				9961C67A2076B322008EC7C5 /* Info.plist */,
+			);
+			path = MarketMate;
+			sourceTree = "<group>";
+		};
+		9961C6822076B322008EC7C5 /* MarketMateTests */ = {
+			isa = PBXGroup;
+			children = (
+				9961C6832076B322008EC7C5 /* MarketMateTests.swift */,
+				9961C6852076B322008EC7C5 /* Info.plist */,
+			);
+			path = MarketMateTests;
+			sourceTree = "<group>";
+		};
+		9961C68D2076B322008EC7C5 /* MarketMateUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9961C68E2076B322008EC7C5 /* MarketMateUITests.swift */,
+				9961C6902076B322008EC7C5 /* Info.plist */,
+			);
+			path = MarketMateUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9961C6662076B322008EC7C5 /* MarketMate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9961C6932076B322008EC7C5 /* Build configuration list for PBXNativeTarget "MarketMate" */;
+			buildPhases = (
+				9961C6632076B322008EC7C5 /* Sources */,
+				9961C6642076B322008EC7C5 /* Frameworks */,
+				9961C6652076B322008EC7C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarketMate;
+			productName = MarketMate;
+			productReference = 9961C6672076B322008EC7C5 /* MarketMate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9961C67E2076B322008EC7C5 /* MarketMateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9961C6962076B322008EC7C5 /* Build configuration list for PBXNativeTarget "MarketMateTests" */;
+			buildPhases = (
+				9961C67B2076B322008EC7C5 /* Sources */,
+				9961C67C2076B322008EC7C5 /* Frameworks */,
+				9961C67D2076B322008EC7C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9961C6812076B322008EC7C5 /* PBXTargetDependency */,
+			);
+			name = MarketMateTests;
+			productName = MarketMateTests;
+			productReference = 9961C67F2076B322008EC7C5 /* MarketMateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9961C6892076B322008EC7C5 /* MarketMateUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9961C6992076B322008EC7C5 /* Build configuration list for PBXNativeTarget "MarketMateUITests" */;
+			buildPhases = (
+				9961C6862076B322008EC7C5 /* Sources */,
+				9961C6872076B322008EC7C5 /* Frameworks */,
+				9961C6882076B322008EC7C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9961C68C2076B322008EC7C5 /* PBXTargetDependency */,
+			);
+			name = MarketMateUITests;
+			productName = MarketMateUITests;
+			productReference = 9961C68A2076B322008EC7C5 /* MarketMateUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9961C65F2076B322008EC7C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Lucas Cordina";
+				TargetAttributes = {
+					9961C6662076B322008EC7C5 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					9961C67E2076B322008EC7C5 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 9961C6662076B322008EC7C5;
+					};
+					9961C6892076B322008EC7C5 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 9961C6662076B322008EC7C5;
+					};
+				};
+			};
+			buildConfigurationList = 9961C6622076B322008EC7C5 /* Build configuration list for PBXProject "MarketMate" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9961C65E2076B322008EC7C5;
+			productRefGroup = 9961C6682076B322008EC7C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9961C6662076B322008EC7C5 /* MarketMate */,
+				9961C67E2076B322008EC7C5 /* MarketMateTests */,
+				9961C6892076B322008EC7C5 /* MarketMateUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9961C6652076B322008EC7C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9961C6792076B322008EC7C5 /* LaunchScreen.storyboard in Resources */,
+				9961C6762076B322008EC7C5 /* Assets.xcassets in Resources */,
+				9961C6742076B322008EC7C5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9961C67D2076B322008EC7C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9961C6882076B322008EC7C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9961C6632076B322008EC7C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9961C66D2076B322008EC7C5 /* RootViewController.swift in Sources */,
+				9961C6712076B322008EC7C5 /* ModelController.swift in Sources */,
+				9961C66F2076B322008EC7C5 /* DataViewController.swift in Sources */,
+				9961C66B2076B322008EC7C5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9961C67B2076B322008EC7C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9961C6842076B322008EC7C5 /* MarketMateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9961C6862076B322008EC7C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9961C68F2076B322008EC7C5 /* MarketMateUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9961C6812076B322008EC7C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9961C6662076B322008EC7C5 /* MarketMate */;
+			targetProxy = 9961C6802076B322008EC7C5 /* PBXContainerItemProxy */;
+		};
+		9961C68C2076B322008EC7C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9961C6662076B322008EC7C5 /* MarketMate */;
+			targetProxy = 9961C68B2076B322008EC7C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9961C6722076B322008EC7C5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9961C6732076B322008EC7C5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9961C6772076B322008EC7C5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9961C6782076B322008EC7C5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9961C6912076B322008EC7C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9961C6922076B322008EC7C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9961C6942076B322008EC7C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8RU9CNBCMQ;
+				INFOPLIST_FILE = MarketMate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.botanica.MarketMate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9961C6952076B322008EC7C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8RU9CNBCMQ;
+				INFOPLIST_FILE = MarketMate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.botanica.MarketMate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9961C6972076B322008EC7C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8RU9CNBCMQ;
+				INFOPLIST_FILE = MarketMateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.botanica.MarketMateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarketMate.app/MarketMate";
+			};
+			name = Debug;
+		};
+		9961C6982076B322008EC7C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8RU9CNBCMQ;
+				INFOPLIST_FILE = MarketMateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.botanica.MarketMateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarketMate.app/MarketMate";
+			};
+			name = Release;
+		};
+		9961C69A2076B322008EC7C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8RU9CNBCMQ;
+				INFOPLIST_FILE = MarketMateUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.botanica.MarketMateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MarketMate;
+			};
+			name = Debug;
+		};
+		9961C69B2076B322008EC7C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8RU9CNBCMQ;
+				INFOPLIST_FILE = MarketMateUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.botanica.MarketMateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MarketMate;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9961C6622076B322008EC7C5 /* Build configuration list for PBXProject "MarketMate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9961C6912076B322008EC7C5 /* Debug */,
+				9961C6922076B322008EC7C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9961C6932076B322008EC7C5 /* Build configuration list for PBXNativeTarget "MarketMate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9961C6942076B322008EC7C5 /* Debug */,
+				9961C6952076B322008EC7C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9961C6962076B322008EC7C5 /* Build configuration list for PBXNativeTarget "MarketMateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9961C6972076B322008EC7C5 /* Debug */,
+				9961C6982076B322008EC7C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9961C6992076B322008EC7C5 /* Build configuration list for PBXNativeTarget "MarketMateUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9961C69A2076B322008EC7C5 /* Debug */,
+				9961C69B2076B322008EC7C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9961C65F2076B322008EC7C5 /* Project object */;
+}
