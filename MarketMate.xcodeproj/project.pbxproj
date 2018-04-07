@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		993C84A12077F06E00015F35 /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = 993C84A02077F06E00015F35 /* AppIcon.appiconset */; };
+		993C84A52077F7AB00015F35 /* Images-3.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 993C84A42077F7AB00015F35 /* Images-3.xcassets */; };
 		9961C66B2076B322008EC7C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961C66A2076B322008EC7C5 /* AppDelegate.swift */; };
 		9961C66D2076B322008EC7C5 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961C66C2076B322008EC7C5 /* RootViewController.swift */; };
 		9961C66F2076B322008EC7C5 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961C66E2076B322008EC7C5 /* DataViewController.swift */; };
 		9961C6712076B322008EC7C5 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961C6702076B322008EC7C5 /* ModelController.swift */; };
 		9961C6742076B322008EC7C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9961C6722076B322008EC7C5 /* Main.storyboard */; };
-		9961C6762076B322008EC7C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9961C6752076B322008EC7C5 /* Assets.xcassets */; };
+		9961C6762076B322008EC7C5 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 9961C6752076B322008EC7C5 /* Contents.json */; };
 		9961C6792076B322008EC7C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9961C6772076B322008EC7C5 /* LaunchScreen.storyboard */; };
 		9961C6842076B322008EC7C5 /* MarketMateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961C6832076B322008EC7C5 /* MarketMateTests.swift */; };
 		9961C68F2076B322008EC7C5 /* MarketMateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961C68E2076B322008EC7C5 /* MarketMateUITests.swift */; };
@@ -36,13 +38,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		993C84A02077F06E00015F35 /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppIcon.appiconset; path = Images.xcassets/Assets.xcassets/AppIcon.appiconset; sourceTree = "<group>"; };
+		993C84A42077F7AB00015F35 /* Images-3.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-3.xcassets"; sourceTree = "<group>"; };
 		9961C6672076B322008EC7C5 /* MarketMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9961C66A2076B322008EC7C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9961C66C2076B322008EC7C5 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		9961C66E2076B322008EC7C5 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		9961C6702076B322008EC7C5 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		9961C6732076B322008EC7C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9961C6752076B322008EC7C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9961C6752076B322008EC7C5 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Contents.json; path = Assets.xcassets/AppIcon.appiconset/Contents.json; sourceTree = "<group>"; };
 		9961C6782076B322008EC7C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9961C67A2076B322008EC7C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9961C67F2076B322008EC7C5 /* MarketMateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarketMateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +82,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		993C84A72078062100015F35 /* CustomControls */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomControls;
+			sourceTree = "<group>";
+		};
 		9961C65E2076B322008EC7C5 = {
 			isa = PBXGroup;
 			children = (
@@ -101,14 +112,17 @@
 		9961C6692076B322008EC7C5 /* MarketMate */ = {
 			isa = PBXGroup;
 			children = (
+				993C84A72078062100015F35 /* CustomControls */,
 				9961C66A2076B322008EC7C5 /* AppDelegate.swift */,
 				9961C66C2076B322008EC7C5 /* RootViewController.swift */,
 				9961C66E2076B322008EC7C5 /* DataViewController.swift */,
 				9961C6702076B322008EC7C5 /* ModelController.swift */,
 				9961C6722076B322008EC7C5 /* Main.storyboard */,
-				9961C6752076B322008EC7C5 /* Assets.xcassets */,
+				9961C6752076B322008EC7C5 /* Contents.json */,
 				9961C6772076B322008EC7C5 /* LaunchScreen.storyboard */,
 				9961C67A2076B322008EC7C5 /* Info.plist */,
+				993C84A02077F06E00015F35 /* AppIcon.appiconset */,
+				993C84A42077F7AB00015F35 /* Images-3.xcassets */,
 			);
 			path = MarketMate;
 			sourceTree = "<group>";
@@ -236,7 +250,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9961C6792076B322008EC7C5 /* LaunchScreen.storyboard in Resources */,
-				9961C6762076B322008EC7C5 /* Assets.xcassets in Resources */,
+				993C84A12077F06E00015F35 /* AppIcon.appiconset in Resources */,
+				993C84A52077F7AB00015F35 /* Images-3.xcassets in Resources */,
+				9961C6762076B322008EC7C5 /* Contents.json in Resources */,
 				9961C6742076B322008EC7C5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,7 +453,7 @@
 		9961C6942076B322008EC7C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8RU9CNBCMQ;
 				INFOPLIST_FILE = MarketMate/Info.plist;
@@ -455,7 +471,7 @@
 		9961C6952076B322008EC7C5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8RU9CNBCMQ;
 				INFOPLIST_FILE = MarketMate/Info.plist;
