@@ -65,13 +65,64 @@
                             </stackView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4pa-Ll-Hlz">
                                 <rect key="frame" x="0.0" y="115" width="375" height="503"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                             </scrollView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="58" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iaJ-kw-k5B">
+                                <rect key="frame" x="10" y="126" width="355" height="503"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="355" id="IXd-sH-qbO"/>
+                                    <constraint firstAttribute="height" constant="503" id="Q4M-1n-pfr"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="listIngredientCell" id="C0F-6P-8F9">
+                                        <rect key="frame" x="0.0" y="28" width="355" height="58"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="C0F-6P-8F9" id="8a6-b7-dkA">
+                                            <rect key="frame" x="0.0" y="0.0" width="355" height="57.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eggs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g38-Iw-M5n">
+                                                    <rect key="frame" x="47" y="12" width="39" height="20"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0A-B5-xaI">
+                                                    <rect key="frame" x="47" y="36" width="29" height="15"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGj-ym-GYF">
+                                                    <rect key="frame" x="312" y="17" width="11" height="22"/>
+                                                    <state key="normal" image="collapsed-carat-side"/>
+                                                </button>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="22" placeholderIntrinsicHeight="22" image="checkbox-unchecked" translatesAutoresizingMaskIntoConstraints="NO" id="uqm-LR-Aa3">
+                                                    <rect key="frame" x="11" y="17" width="22" height="22"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="g38-Iw-M5n" firstAttribute="leading" secondItem="8a6-b7-dkA" secondAttribute="leading" constant="47" id="7Yi-7F-viN"/>
+                                                <constraint firstItem="uqm-LR-Aa3" firstAttribute="leading" secondItem="8a6-b7-dkA" secondAttribute="leading" constant="11" id="95j-mo-VFJ"/>
+                                                <constraint firstItem="zGj-ym-GYF" firstAttribute="centerY" secondItem="8a6-b7-dkA" secondAttribute="centerY" id="UMA-hi-qBH"/>
+                                                <constraint firstItem="g38-Iw-M5n" firstAttribute="top" secondItem="8a6-b7-dkA" secondAttribute="top" constant="12" id="ZXa-dM-B5a"/>
+                                                <constraint firstAttribute="bottom" secondItem="U0A-B5-xaI" secondAttribute="bottom" constant="6.5" id="oUa-Ue-Eh6"/>
+                                                <constraint firstAttribute="trailing" secondItem="zGj-ym-GYF" secondAttribute="trailing" constant="32" id="pCZ-Kq-2bv"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="g38-Iw-M5n" secondAttribute="trailing" constant="14" id="t5c-Jy-0oy"/>
+                                                <constraint firstItem="uqm-LR-Aa3" firstAttribute="centerY" secondItem="8a6-b7-dkA" secondAttribute="centerY" id="zRo-dp-SvO"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="iaJ-kw-k5B" firstAttribute="top" secondItem="4pa-Ll-Hlz" secondAttribute="top" constant="11" id="8Qg-AZ-Uvo"/>
+                            <constraint firstItem="iaJ-kw-k5B" firstAttribute="height" secondItem="4pa-Ll-Hlz" secondAttribute="height" id="B5G-sC-y4y"/>
                             <constraint firstItem="fGc-uM-ue7" firstAttribute="trailing" secondItem="s2E-6E-0Ke" secondAttribute="trailing" id="MFC-eR-DnD"/>
                             <constraint firstItem="4pa-Ll-Hlz" firstAttribute="centerX" secondItem="VDM-ZT-K2m" secondAttribute="centerX" id="Mg8-Tv-aI0"/>
+                            <constraint firstItem="iaJ-kw-k5B" firstAttribute="centerX" secondItem="4pa-Ll-Hlz" secondAttribute="centerX" id="Nso-mS-CbD"/>
                             <constraint firstItem="4pa-Ll-Hlz" firstAttribute="top" secondItem="s2E-6E-0Ke" secondAttribute="top" constant="115" id="Qlh-As-FuO"/>
                             <constraint firstItem="s2E-6E-0Ke" firstAttribute="width" secondItem="ZwX-cT-FIQ" secondAttribute="width" id="Srd-qJ-YTS"/>
                             <constraint firstItem="VDM-ZT-K2m" firstAttribute="bottom" secondItem="4pa-Ll-Hlz" secondAttribute="bottom" id="aB4-6Z-qgl"/>
@@ -152,6 +203,8 @@
     </scenes>
     <resources>
         <image name="carat" width="11" height="6"/>
+        <image name="checkbox-unchecked" width="24" height="24"/>
+        <image name="collapsed-carat-side" width="11" height="19"/>
         <image name="ellipses" width="23" height="5"/>
         <namedColor name="primaryColor">
             <color red="0.25900000333786011" green="0.6470000147819519" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
