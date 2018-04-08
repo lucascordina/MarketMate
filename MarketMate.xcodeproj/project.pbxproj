@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		993C84AB2078EC3A00015F35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 993C84AA2078EC3A00015F35 /* Assets.xcassets */; };
+		993C84CF207A885800015F35 /* UIButtonRadiusExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993C84CE207A885800015F35 /* UIButtonRadiusExtension.swift */; };
 		9961C66B2076B322008EC7C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961C66A2076B322008EC7C5 /* AppDelegate.swift */; };
 		9961C66F2076B322008EC7C5 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961C66E2076B322008EC7C5 /* DataViewController.swift */; };
 		9961C6712076B322008EC7C5 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961C6702076B322008EC7C5 /* ModelController.swift */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		993C84AA2078EC3A00015F35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		993C84CE207A885800015F35 /* UIButtonRadiusExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonRadiusExtension.swift; sourceTree = "<group>"; };
 		9961C6672076B322008EC7C5 /* MarketMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9961C66A2076B322008EC7C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9961C66E2076B322008EC7C5 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,14 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		993C84CD207A884600015F35 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				993C84CE207A885800015F35 /* UIButtonRadiusExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		9961C65E2076B322008EC7C5 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +129,7 @@
 		9961C6692076B322008EC7C5 /* MarketMate */ = {
 			isa = PBXGroup;
 			children = (
+				993C84CD207A884600015F35 /* Extensions */,
 				993C84AD207913F000015F35 /* Storyboards */,
 				993C84AC207913DC00015F35 /* Controllers */,
 				9961C66A2076B322008EC7C5 /* AppDelegate.swift */,
@@ -282,6 +293,7 @@
 				9961C6712076B322008EC7C5 /* ModelController.swift in Sources */,
 				9961C66F2076B322008EC7C5 /* DataViewController.swift in Sources */,
 				9961C66B2076B322008EC7C5 /* AppDelegate.swift in Sources */,
+				993C84CF207A885800015F35 /* UIButtonRadiusExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +475,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.botanica.MarketMate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -481,6 +494,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.botanica.MarketMate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
