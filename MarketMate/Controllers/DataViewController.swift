@@ -8,18 +8,23 @@
 
 import UIKit
 
-class DataViewController: UIViewController {
+class DataViewController: UIViewController, UITableViewDataSource {
 
     @IBOutlet weak var dataLabel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
     var dataObject: String = ""
+    //mock
+    private var data: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //mock table data
+        for i in 0...1000 {
+            data.append("\(i)")
+        }
         
-        //start adding components
-//        view.addSubview(initializeNavView())
-        
+        tableView.dataSource = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,36 +36,26 @@ class DataViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
-
-//    func initializeNavView() -> UIView {
-//        let navView = UIView()
-//
-//        navView.translatesAutoresizingMaskIntoConstraints = false
-//        navView.backgroundColor = UIColor(named: "primaryColor")
-//
-//        navView.widthAnchor.constraint(equalToConstant: view.frame.width).isActive = true
-//        navView.heightAnchor.constraint(equalToConstant: 115).isActive = true
-//
-//        let titleLabel = UITextView()
-//        //subviews need to be added prior to adding constraints
-//        titleLabel.text = "My List"
-//        navView.addSubview(titleLabel)
-//        titleLabel.translatesAutoresizingMaskIntoConstraints = false
-//        titleLabel.textAlignment = .center
-//        titleLabel.isEditable = false
-//        titleLabel.isScrollEnabled = false
-//        titleLabel.backgroundColor = .clear
-//        titleLabel.textColor = .white
-//        titleLabel.font = UIFont.boldSystemFont(ofSize: 17)
-//
-//
-//        titleLabel.topAnchor.constraint(equalTo: navView.topAnchor, constant:40).isActive = true
-//        titleLabel.bottomAnchor.constraint(equalTo: navView.bottomAnchor, constant: 0).isActive = true
-//        titleLabel.leftAnchor.constraint(equalTo: navView.leftAnchor, constant: 0).isActive = true
-//        titleLabel.rightAnchor.constraint(equalTo: navView.rightAnchor, constant: 0).isActive = true
-//
-//
-//        return navView
-//    }
+    
+    //table view interface methods
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return data.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellReuseIdentifier")! //1.
+        
+        let text = data[indexPath.row] //2.
+        
+        cell.textLabel?.text = text //3.
+        
+        return cell //4.
+    }
+    
+    
 
 }

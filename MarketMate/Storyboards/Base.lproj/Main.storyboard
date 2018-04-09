@@ -74,7 +74,7 @@
                                     <constraint firstAttribute="height" constant="503" id="Q4M-1n-pfr"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="listIngredientCell" id="C0F-6P-8F9">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="listIngredientCell" id="C0F-6P-8F9" customClass="ListIngredientCell" customModule="MarketMate" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="355" height="58"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="C0F-6P-8F9" id="8a6-b7-dkA">
@@ -119,6 +119,10 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </button>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="22" placeholderIntrinsicHeight="22" image="checkbox-checked" translatesAutoresizingMaskIntoConstraints="NO" id="ort-zE-4lZ">
+                                                    <rect key="frame" x="11" y="17" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="g38-Iw-M5n" firstAttribute="leading" secondItem="8a6-b7-dkA" secondAttribute="leading" constant="47" id="7Yi-7F-viN"/>
@@ -135,6 +139,16 @@
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="U0A-B5-xaI" secondAttribute="trailing" constant="45" id="vFu-gZ-okB"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="checkmark" destination="uqm-LR-Aa3" id="Z7a-y4-i9r"/>
+                                            <outlet property="checkmarkChecked" destination="ort-zE-4lZ" id="4qL-Ke-rQR"/>
+                                            <outlet property="checkmarkUnchecked" destination="uqm-LR-Aa3" id="aC3-eG-27f"/>
+                                            <outlet property="ingredientAmount" destination="U0A-B5-xaI" id="I9g-4H-8cg"/>
+                                            <outlet property="ingredientTitle" destination="g38-Iw-M5n" id="TNe-ke-371"/>
+                                            <outlet property="recipeIndicator" destination="KZa-qU-FRn" id="l0G-sA-Kce"/>
+                                            <outlet property="substitueCarat" destination="zGj-ym-GYF" id="akB-5Q-NZJ"/>
+                                            <outlet property="substituteCarat" destination="zGj-ym-GYF" id="3Tt-ec-KAh"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -157,10 +171,41 @@
                         <viewLayoutGuide key="safeArea" id="VDM-ZT-K2m"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="S4V-UQ-kcJ"/>
+                    <connections>
+                        <outlet property="tableView" destination="iaJ-kw-k5B" id="zGx-iY-GRd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GmD-Rr-ZGN" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1133.5999999999999" y="-1465.8170914542729"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="daw-AU-fAu">
+            <objects>
+                <tableViewController id="UbM-Cu-2VO" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="4oN-4P-LLI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="25H-Wg-NHC">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="25H-Wg-NHC" id="hFa-fT-Oz1">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="UbM-Cu-2VO" id="0Ae-m9-4Ko"/>
+                            <outlet property="delegate" destination="UbM-Cu-2VO" id="Vhf-2C-04l"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="77p-mL-dB3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1972" y="-1468"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="Pfs-HJ-rtb">
@@ -345,6 +390,7 @@ AAAAAAACAQAAAAAAAABZAAAAAAAAAAAAAAAAAAAaBQ
 </mutableData>
         </image>
         <image name="carat" width="11" height="6"/>
+        <image name="checkbox-checked" width="22" height="22"/>
         <image name="ellipses" width="23" height="5"/>
         <image name="imageView:uqm-LR-Aa3:image" width="24" height="24">
             <mutableData key="keyedArchiveRepresentation">
@@ -489,12 +535,6 @@ Og09DUINUQ1VDWANaA11DYINlw2cDaANog2kDaYNrw20DboNwg3EDcYNyA3KDc8N1x9DH0UfSh9YH1wf
 Yx9oH3UfeB+FH4ofkh+VH5ofoh+lH7cfuh+/AAAAAAAAAgEAAAAAAAAAWQAAAAAAAAAAAAAAAAAAH8E
 </mutableData>
         </image>
-        <namedColor name="primaryColor">
-            <color red="0.25900000333786011" green="0.6470000147819519" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="primaryColor">
-            <color red="0.25900000333786011" green="0.6470000147819519" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="primaryColor">
             <color red="0.25900000333786011" green="0.6470000147819519" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
