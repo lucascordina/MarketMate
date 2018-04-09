@@ -28,12 +28,12 @@ class ListIngredientCell: UITableViewCell {
     
     func updateUI(){
         //hide unchecked checkmark if ingr edient is checked
-        checkmarkUnchecked.isHidden = ingredient!.isChecked ? false : true
+        checkmarkUnchecked.isHidden = (ingredient?.isChecked)!
         //show checked checkmark if ingredient is checked
-        checkmarkChecked.isHidden = ingredient!.isChecked ? true: false
+        checkmarkChecked.isHidden = !(ingredient?.isChecked)!
         ingredientTitle.text = ingredient?.title
         ingredientAmount.text = (ingredient?.amount)! + " " + (ingredient?.amountType)!
         recipeIndicator.isHidden = (ingredient?.recipeColor.isEmpty)! ? true: false
-        substituteCarat.isHidden = (ingredient?.hasSubstitute)!
+        substituteCarat.isHidden = !(ingredient?.hasSubstitute)!
     }
 }

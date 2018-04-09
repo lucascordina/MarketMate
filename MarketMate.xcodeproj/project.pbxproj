@@ -19,6 +19,7 @@
 		9961C6792076B322008EC7C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9961C6772076B322008EC7C5 /* LaunchScreen.storyboard */; };
 		9961C6842076B322008EC7C5 /* MarketMateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961C6832076B322008EC7C5 /* MarketMateTests.swift */; };
 		9961C68F2076B322008EC7C5 /* MarketMateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961C68E2076B322008EC7C5 /* MarketMateUITests.swift */; };
+		99EFDB83207BFD55000F4B5C /* IngredientTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EFDB82207BFD55000F4B5C /* IngredientTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		9961C68A2076B322008EC7C5 /* MarketMateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarketMateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9961C68E2076B322008EC7C5 /* MarketMateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketMateUITests.swift; sourceTree = "<group>"; };
 		9961C6902076B322008EC7C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99EFDB82207BFD55000F4B5C /* IngredientTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			children = (
 				9961C66E2076B322008EC7C5 /* DataViewController.swift */,
 				9961C6702076B322008EC7C5 /* ModelController.swift */,
+				99EFDB82207BFD55000F4B5C /* IngredientTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				993C84D3207BE9B300015F35 /* ListIngredientCell.swift in Sources */,
 				993C84D6207BEB4700015F35 /* ListIngredient.swift in Sources */,
 				9961C66F2076B322008EC7C5 /* DataViewController.swift in Sources */,
+				99EFDB83207BFD55000F4B5C /* IngredientTableViewController.swift in Sources */,
 				9961C66B2076B322008EC7C5 /* AppDelegate.swift in Sources */,
 				993C84CF207A885800015F35 /* UIButtonRadiusExtension.swift in Sources */,
 			);
