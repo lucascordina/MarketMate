@@ -27,7 +27,7 @@ class ListIngredientCell: UITableViewCell {
     }
     
     func updateUI(){
-        //hide unchecked checkmark if ingr edient is checked
+        //hide unchecked checkmark if ingredient is checked
         checkmarkUnchecked.isHidden = (ingredient?.isChecked)!
         //show checked checkmark if ingredient is checked
         checkmarkChecked.isHidden = !(ingredient?.isChecked)!
@@ -35,5 +35,13 @@ class ListIngredientCell: UITableViewCell {
         ingredientAmount.text = (ingredient?.amount)! + " " + (ingredient?.amountType)!
         recipeIndicator.isHidden = (ingredient?.recipeColor.isEmpty)! ? true: false
         substituteCarat.isHidden = !(ingredient?.hasSubstitute)!
+        
+        // add strikethrough on checked ingredient
+        if(ingredient?.isChecked)!{
+            let attributedString = NSMutableAttributedString(string: (ingredient?.title)!)
+            attributedString.addAttribute(NSAttributedStringKey.strikethroughStyle, value: 2, range: NSMakeRange(0, attributedString.length))
+            ingredientTitle.attributedText = attributedString
+        }
+
     }
 }
