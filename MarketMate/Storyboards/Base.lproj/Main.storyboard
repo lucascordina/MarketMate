@@ -104,13 +104,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Milk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="de3-aY-0FG">
-                                            <rect key="frame" x="47" y="12" width="31.5" height="20"/>
+                                            <rect key="frame" x="47" y="11" width="31.5" height="20"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbS-G4-oGT">
-                                            <rect key="frame" x="47" y="37" width="28.5" height="15"/>
+                                            <rect key="frame" x="47" y="33.5" width="28.5" height="15"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -141,9 +141,8 @@
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </button>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="22" placeholderIntrinsicHeight="22" image="checkbox-checked" translatesAutoresizingMaskIntoConstraints="NO" id="fi7-c2-7TL">
-                                            <rect key="frame" x="11" y="17" width="22" height="22"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="22" placeholderIntrinsicHeight="22" image="checkbox-checked" translatesAutoresizingMaskIntoConstraints="NO" id="fi7-c2-7TL">
+                                            <rect key="frame" x="11" y="18.5" width="22" height="22"/>
                                         </imageView>
                                     </subviews>
                                     <constraints>
@@ -151,11 +150,13 @@
                                         <constraint firstItem="fbS-G4-oGT" firstAttribute="leading" secondItem="3AY-Kf-RJS" secondAttribute="leading" constant="47" id="DZL-Oc-Xo8"/>
                                         <constraint firstItem="YS4-sO-TMd" firstAttribute="leading" secondItem="de3-aY-0FG" secondAttribute="trailing" constant="7.5" id="MaN-oB-KKR"/>
                                         <constraint firstItem="BTg-gz-8Jy" firstAttribute="leading" secondItem="3AY-Kf-RJS" secondAttribute="leading" constant="11" id="QLg-Fq-Xmf"/>
-                                        <constraint firstAttribute="bottom" secondItem="fbS-G4-oGT" secondAttribute="bottom" constant="6.5" id="QV5-X7-mfA"/>
-                                        <constraint firstItem="de3-aY-0FG" firstAttribute="top" secondItem="3AY-Kf-RJS" secondAttribute="top" constant="12" id="RN0-op-5td"/>
+                                        <constraint firstAttribute="bottom" secondItem="fbS-G4-oGT" secondAttribute="bottom" constant="10" id="QV5-X7-mfA"/>
+                                        <constraint firstItem="de3-aY-0FG" firstAttribute="top" secondItem="3AY-Kf-RJS" secondAttribute="top" constant="11" id="RN0-op-5td"/>
                                         <constraint firstItem="Bd6-Vy-f8p" firstAttribute="centerY" secondItem="3AY-Kf-RJS" secondAttribute="centerY" id="XfC-WX-e75"/>
+                                        <constraint firstItem="fi7-c2-7TL" firstAttribute="leading" secondItem="3AY-Kf-RJS" secondAttribute="leading" constant="11" id="a0v-7Z-5KK"/>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fbS-G4-oGT" secondAttribute="trailing" constant="45" id="dnd-9U-scd"/>
                                         <constraint firstItem="BTg-gz-8Jy" firstAttribute="top" secondItem="3AY-Kf-RJS" secondAttribute="top" constant="17" id="gcb-JG-hcU"/>
+                                        <constraint firstItem="fi7-c2-7TL" firstAttribute="centerY" secondItem="3AY-Kf-RJS" secondAttribute="centerY" id="rBy-2L-H9S"/>
                                         <constraint firstAttribute="trailing" secondItem="Bd6-Vy-f8p" secondAttribute="trailing" constant="32" id="t5n-hd-oUb"/>
                                         <constraint firstItem="de3-aY-0FG" firstAttribute="leading" secondItem="3AY-Kf-RJS" secondAttribute="leading" constant="47" id="txj-Oe-dq7"/>
                                         <constraint firstItem="YS4-sO-TMd" firstAttribute="top" secondItem="3AY-Kf-RJS" secondAttribute="top" constant="17" id="uFb-gP-VsM"/>

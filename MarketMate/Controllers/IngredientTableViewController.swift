@@ -13,11 +13,17 @@ class IngredientTableViewController: UITableViewController {
     
     var dataObject: String = ""
     //mock
-    private var data: [String] = []
+    private var data: [ListIngredient] = [
+        ListIngredient(title: "Eggs", amount: "6", amountType: "", hasSubstitute: false, recipeColor: "blue", isChecked: false),
+        ListIngredient(title: "Milk", amount: "200", amountType: "ml", hasSubstitute: true, recipeColor: "", isChecked: true),
+        ListIngredient(title: "Cheese", amount: "2", amountType: "kg", hasSubstitute: true, recipeColor: "blue", isChecked: false)
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //set default row height
+        self.tableView.rowHeight = 58;
     }
     
     override func didReceiveMemoryWarning() {
@@ -43,7 +49,7 @@ class IngredientTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 3
+        return data.count
     }
     
     // indexPath: which section and which row
@@ -51,9 +57,7 @@ class IngredientTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "IngredientCell", for: indexPath) as! ListIngredientCell
         
         
-        let ingredient = ListIngredient(title: "Cheese", amount: "10", amountType: "kg", hasSubstitute: true, recipeColor: "blue", isChecked: true)
-        
-        cell.ingredient = ingredient
+        cell.ingredient = data[indexPath.row]
         
         return cell
     }
