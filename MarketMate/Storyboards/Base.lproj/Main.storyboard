@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HiM-Xn-Bt8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RoR-G8-IYY">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -63,18 +63,18 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4pa-Ll-Hlz">
-                                <rect key="frame" x="0.0" y="115" width="375" height="503"/>
-                            </scrollView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZAv-Eq-p6e">
+                                <rect key="frame" x="0.0" y="123" width="375" height="495"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="72s-ib-FAr" kind="embed" id="001-eW-WkI"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="fGc-uM-ue7" firstAttribute="trailing" secondItem="s2E-6E-0Ke" secondAttribute="trailing" id="MFC-eR-DnD"/>
-                            <constraint firstItem="4pa-Ll-Hlz" firstAttribute="centerX" secondItem="VDM-ZT-K2m" secondAttribute="centerX" id="Mg8-Tv-aI0"/>
-                            <constraint firstItem="4pa-Ll-Hlz" firstAttribute="top" secondItem="s2E-6E-0Ke" secondAttribute="top" constant="115" id="Qlh-As-FuO"/>
                             <constraint firstItem="s2E-6E-0Ke" firstAttribute="width" secondItem="ZwX-cT-FIQ" secondAttribute="width" id="Srd-qJ-YTS"/>
-                            <constraint firstItem="VDM-ZT-K2m" firstAttribute="bottom" secondItem="4pa-Ll-Hlz" secondAttribute="bottom" id="aB4-6Z-qgl"/>
-                            <constraint firstItem="4pa-Ll-Hlz" firstAttribute="width" secondItem="ZwX-cT-FIQ" secondAttribute="width" id="bbv-fx-tGk"/>
                             <constraint firstItem="fGc-uM-ue7" firstAttribute="top" secondItem="ZwX-cT-FIQ" secondAttribute="top" id="hw4-Ow-V6k"/>
                             <constraint firstItem="fGc-uM-ue7" firstAttribute="width" secondItem="ZwX-cT-FIQ" secondAttribute="width" id="vck-2P-hNL"/>
                             <constraint firstItem="s2E-6E-0Ke" firstAttribute="centerX" secondItem="ZwX-cT-FIQ" secondAttribute="centerX" id="xS4-Jx-a06"/>
@@ -92,7 +92,7 @@
             <objects>
                 <tableViewController id="72s-ib-FAr" customClass="IngredientTableViewController" customModule="MarketMate" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="egB-i6-96b">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="495"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
@@ -181,7 +181,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sd1-Hg-vZ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2373.5" y="-1467.5"/>
+            <point key="canvasLocation" x="2049" y="-1543"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="Pfs-HJ-rtb">
@@ -244,24 +244,6 @@
             </objects>
             <point key="canvasLocation" x="184" y="-382"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="ARC-vF-I8D">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HiM-Xn-Bt8" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iL9-cY-1jW">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="72s-ib-FAr" kind="relationship" relationship="rootViewController" id="OyX-Fp-LKa"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="t5D-dp-YhS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1786.5" y="-1467.5"/>
-        </scene>
     </scenes>
     <resources>
         <image name="carat" width="11" height="6"/>
@@ -271,9 +253,6 @@
         <image name="ellipses" width="23" height="5"/>
         <namedColor name="primaryColor">
             <color red="0.2590000033" green="0.64700001480000002" blue="0.96100002529999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="primaryColor">
-            <color red="0.25900000333786011" green="0.6470000147819519" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
