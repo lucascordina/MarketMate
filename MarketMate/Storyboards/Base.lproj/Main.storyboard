@@ -70,7 +70,7 @@
                                 </connections>
                             </containerView>
                         </subviews>
-                        <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.96861571073532104" green="0.96862143278121948" blue="0.96863609552383423" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="ZAv-Eq-p6e" firstAttribute="top" secondItem="s2E-6E-0Ke" secondAttribute="bottom" constant="18" id="6ae-BA-75v"/>
                             <constraint firstItem="VDM-ZT-K2m" firstAttribute="trailing" secondItem="ZAv-Eq-p6e" secondAttribute="trailing" constant="8" id="EH5-A8-wgz"/>
@@ -94,13 +94,13 @@
         <scene sceneID="rWN-1c-uvZ">
             <objects>
                 <tableViewController id="72s-ib-FAr" customClass="IngredientTableViewController" customModule="MarketMate" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="egB-i6-96b">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="56" sectionFooterHeight="28" id="egB-i6-96b">
                         <rect key="frame" x="0.0" y="0.0" width="360" height="494"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="IngredientCell" rowHeight="59" id="7xQ-56-RLP" userLabel="IngredientCell" customClass="ListIngredientCell" customModule="MarketMate" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="360" height="59"/>
+                                <rect key="frame" x="0.0" y="56" width="360" height="59"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7xQ-56-RLP" id="3AY-Kf-RJS">
                                     <rect key="frame" x="0.0" y="0.0" width="360" height="58.5"/>
@@ -165,6 +165,7 @@
                                         <constraint firstItem="YS4-sO-TMd" firstAttribute="top" secondItem="3AY-Kf-RJS" secondAttribute="top" constant="17" id="uFb-gP-VsM"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration" identifier="IngredientCell"/>
                                 <connections>
                                     <outlet property="checkmarkChecked" destination="fi7-c2-7TL" id="DPN-NY-4ka"/>

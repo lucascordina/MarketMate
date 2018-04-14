@@ -58,10 +58,22 @@ class IngredientTableViewController: UITableViewController {
     }
     
     
-    
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView?
+    {
+        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: 56))
+        headerView.backgroundColor = UIColor(named: "lightBackground")
+        let label = UILabel()
+        label.text = categoryTitles[section]
+        label.font = UIFont.boldSystemFont(ofSize: 34)
+        label.sizeToFit()
         
-        return categoryTitles[section]
+        //align title with cell content
+        label.center.y = headerView.center.y
+        label.center.x = 85
+        
+        headerView.addSubview(label)
+        
+        return headerView
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
