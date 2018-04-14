@@ -174,6 +174,7 @@
                                     <outlet property="ingredientTitle" destination="de3-aY-0FG" id="f0U-aq-lmY"/>
                                     <outlet property="recipeIndicator" destination="YS4-sO-TMd" id="8V6-Hs-Glx"/>
                                     <outlet property="substituteCarat" destination="Bd6-Vy-f8p" id="ah8-qs-ZRH"/>
+                                    <outlet property="viewBg" destination="3AY-Kf-RJS" id="DVR-GL-xRA"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

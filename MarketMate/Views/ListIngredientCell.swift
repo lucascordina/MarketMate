@@ -17,7 +17,7 @@ class ListIngredientCell: UITableViewCell {
     @IBOutlet weak var ingredientAmount: UILabel!
     @IBOutlet weak var recipeIndicator: UIButton!
     @IBOutlet weak var substituteCarat: UIButton!
-    
+    @IBOutlet weak var viewBg: UIView!
     
     //Data Model
     var ingredient: ListIngredient? {
@@ -41,7 +41,7 @@ class ListIngredientCell: UITableViewCell {
         recipeIndicator.isHidden = (ingredient?.recipeColor.isEmpty)! ? true: false
         substituteCarat.isHidden = !(ingredient?.hasSubstitute)!
         
-        // add strikethrough on checked ingredient
+        // add/remove strikethrough on check/uncheck ingredient
         if(ingredient?.isChecked)!{
             let attributedString = NSMutableAttributedString(string: (ingredient?.title)!)
             attributedString.addAttribute(NSAttributedStringKey.strikethroughStyle, value: 2, range: NSMakeRange(0, attributedString.length))
@@ -64,6 +64,14 @@ class ListIngredientCell: UITableViewCell {
         checkmarkUncheckedGesture.numberOfTouchesRequired = 1
         checkmarkUnchecked.isUserInteractionEnabled = true
         checkmarkUnchecked.addGestureRecognizer(checkmarkUncheckedGesture)
+        
+        // add shadows
+//        self.layer.masksToBounds = false
+//        self.layer.shadowOffset = CGSize(width: 2.0, height: 0.0)
+//        self.layer.shadowColor = UIColor.black.cgColor
+//        self.layer.shadowOpacity = 0.23
+//        self.layer.shadowRadius = 4
+
 
     }
     

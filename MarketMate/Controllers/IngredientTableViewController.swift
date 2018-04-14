@@ -35,10 +35,11 @@ class IngredientTableViewController: UITableViewController {
         ListIngredient(title: "Cheese", amount: "2", amountType: "kg", hasSubstitute: true, recipeColor: "blue", isChecked: false)
     ]
     
-    private var categoryTitles: [String] = [
-        "Dairy",
-        "Milk"
+    private var categories: [(title: String, ingredientCount: Int)] = [
+        ("Dairy", 9),
+        ("Meat", 10)
     ]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,7 +64,7 @@ class IngredientTableViewController: UITableViewController {
         let headerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: 56))
         headerView.backgroundColor = UIColor(named: "lightBackground")
         let label = UILabel()
-        label.text = categoryTitles[section]
+        label.text = categories[section].title
         label.font = UIFont.boldSystemFont(ofSize: 34)
         label.sizeToFit()
         
@@ -77,26 +78,41 @@ class IngredientTableViewController: UITableViewController {
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return categoryTitles.count
+        return categories.count
     }
     
+    //allocate cells to category
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        //mock assign of first 9 items to section one
-        // second 10 items to section two
-        if(section == 1) {
-            return 9
-        } else {
-            return 10
-        }
+        return categories[section].ingredientCount
     }
     
-    // indexPath: which section and which row
+    // set cell
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "IngredientCell", for: indexPath) as! ListIngredientCell
         
         
         cell.ingredient = data[indexPath.row]
+        let currentSectionLength = categories[indexPath.section].ingredientCount
+        
+        //Round out the top corners of the first cell of each section
+        if indexPath[1] == 0 {
+            let topCornerRadiusPath = UIBezierPath(roundedRect: cell.bounds,
+                                                   byRoundingCorners: [.topLeft , .topRight],
+                                                   cornerRadii: CGSize(width: 8.0, height: 8.0))
+            let topCornerRadiusLayer = CAShapeLayer()
+            topCornerRadiusLayer.frame = cell.bounds
+            topCornerRadiusLayer.path = topCornerRadiusPath.cgPath
+            cell.layer.mask = topCornerRadiusLayer
+        } else if indexPath[1] == currentSectionLength-1 { //decreasing current section length by 1 to match the row counts, as the row is 0-index based
+            let bottomCornerRadiusPath = UIBezierPath(roundedRect: cell.bounds,
+                                                   byRoundingCorners: [.bottomLeft , .bottomRight],
+                                                   cornerRadii: CGSize(width: 8.0, height: 8.0))
+            let bottomCornerRadiusLayer = CAShapeLayer()
+            bottomCornerRadiusLayer.frame = cell.bounds
+            bottomCornerRadiusLayer.path = bottomCornerRadiusPath.cgPath
+            cell.layer.mask = bottomCornerRadiusLayer
+        }
+
         
         //remove cell highlighting on select
         cell.selectionStyle = UITableViewCellSelectionStyle.none
