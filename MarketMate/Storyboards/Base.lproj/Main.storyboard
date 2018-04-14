@@ -119,10 +119,10 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bd6-Vy-f8p">
-                                            <rect key="frame" x="332" y="18.5" width="11" height="22"/>
+                                            <rect key="frame" x="317" y="18.5" width="11" height="22"/>
                                             <state key="normal" image="collapsed-carat-side"/>
                                         </button>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="22" placeholderIntrinsicHeight="22" image="checkbox-unchecked" translatesAutoresizingMaskIntoConstraints="NO" id="BTg-gz-8Jy">
+                                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="22" placeholderIntrinsicHeight="22" image="checkbox-unchecked" translatesAutoresizingMaskIntoConstraints="NO" id="BTg-gz-8Jy">
                                             <rect key="frame" x="11" y="17" width="22" height="22"/>
                                         </imageView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YS4-sO-TMd">
@@ -144,7 +144,7 @@
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </button>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="22" placeholderIntrinsicHeight="22" image="checkbox-checked" translatesAutoresizingMaskIntoConstraints="NO" id="fi7-c2-7TL">
+                                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="22" placeholderIntrinsicHeight="22" image="checkbox-checked" translatesAutoresizingMaskIntoConstraints="NO" id="fi7-c2-7TL">
                                             <rect key="frame" x="11" y="18.5" width="22" height="22"/>
                                         </imageView>
                                     </subviews>
