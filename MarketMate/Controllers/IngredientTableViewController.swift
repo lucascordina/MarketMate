@@ -46,6 +46,7 @@ class IngredientTableViewController: UITableViewController {
         
         //set default row height
         self.tableView.rowHeight = 58;
+        self.tableView.showsVerticalScrollIndicator = false
     }
     
     override func didReceiveMemoryWarning() {
