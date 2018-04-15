@@ -85,7 +85,7 @@ class ListIngredientCell: UITableViewCell {
             ]
             
             //add rounded corner shape and clip it based on superview width and margin
-            let bounds = CGRect(x: 0, y: 0, width: self.bounds.width-10, height: self.bounds.height)
+            let bounds = CGRect(x: 0, y: 0, width: mainBg.bounds.width, height: self.bounds.height)
             
             let path = UIBezierPath(roundedRect:bounds,
                                     byRoundingCorners:[.topRight, .topLeft],
@@ -99,12 +99,12 @@ class ListIngredientCell: UITableViewCell {
             
             self.currentConstraints = [
                 shadowView.topAnchor.constraint(equalTo: viewBg.topAnchor),
-                shadowView.heightAnchor.constraint(equalTo: self.heightAnchor, constant: -2)
+                shadowView.heightAnchor.constraint(equalTo: self.heightAnchor, constant: -4)
             ]
             
             
             //add rounded corner shape and clip it based on superview width and margin
-            let bounds = CGRect(x: 0, y: 0, width: self.bounds.width-10, height: self.bounds.height)
+            let bounds = CGRect(x: 0, y: 0, width: mainBg.bounds.width, height: mainBg.bounds.height)
             let path = UIBezierPath(roundedRect:bounds,
                                     byRoundingCorners:[.bottomRight, .bottomLeft],
                                     cornerRadii: CGSize(width: 8, height:  8))

@@ -107,10 +107,10 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C8c-1a-kG2" userLabel="shadowView">
-                                            <rect key="frame" x="5" y="5" width="365" height="48.5"/>
+                                            <rect key="frame" x="10" y="5" width="355" height="48.5"/>
                                             <subviews>
                                                 <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pjX-zV-Vdw" userLabel="mainBg">
-                                                    <rect key="frame" x="0.0" y="0.0" width="365" height="48.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="355" height="48.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Milk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="de3-aY-0FG">
                                                             <rect key="frame" x="45" y="8" width="31.5" height="20"/>
@@ -160,7 +160,7 @@
                                                     <rect key="frame" x="8" y="13" width="22" height="22"/>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bd6-Vy-f8p">
-                                                    <rect key="frame" x="342" y="13" width="11" height="22"/>
+                                                    <rect key="frame" x="332" y="13" width="11" height="22"/>
                                                     <state key="normal" image="collapsed-carat-side"/>
                                                 </button>
                                             </subviews>
@@ -183,7 +183,7 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstItem="C8c-1a-kG2" firstAttribute="width" secondItem="3AY-Kf-RJS" secondAttribute="width" constant="-10" id="01h-aP-lp3"/>
+                                        <constraint firstItem="C8c-1a-kG2" firstAttribute="width" secondItem="3AY-Kf-RJS" secondAttribute="width" constant="-20" id="01h-aP-lp3"/>
                                         <constraint firstItem="C8c-1a-kG2" firstAttribute="centerY" secondItem="3AY-Kf-RJS" secondAttribute="centerY" id="ggv-Hc-fuE"/>
                                         <constraint firstItem="C8c-1a-kG2" firstAttribute="centerX" secondItem="3AY-Kf-RJS" secondAttribute="centerX" id="qsa-Dj-fcx"/>
                                         <constraint firstItem="C8c-1a-kG2" firstAttribute="height" secondItem="3AY-Kf-RJS" secondAttribute="height" constant="-10" id="x1I-sR-Y13"/>
