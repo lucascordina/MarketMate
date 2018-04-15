@@ -25,6 +25,7 @@ class ListIngredientCell: UITableViewCell {
     @IBOutlet weak var substituteCarat: UIButton!
     @IBOutlet weak var viewBg: UIView!
     @IBOutlet weak var mainBg: UIView!
+    @IBOutlet weak var shadowView: UIView!
     
     var cellPosition: CellPosition = .middle {
         didSet {
@@ -64,33 +65,53 @@ class ListIngredientCell: UITableViewCell {
     }
     
     private func addShadowConstraints(cellPosition: CellPosition) {
-        mainBg.layer.shadowColor = UIColor.black.cgColor
-        mainBg.layer.shadowOpacity = 0.3
-        mainBg.layer.shadowRadius = 1.5
-        mainBg.layer.shadowOffset = CGSize(width: 0.2,height: 0.2)
-        mainBg.layer.masksToBounds = false
-        mainBg.backgroundColor = .white
+        shadowView.layer.shadowColor = UIColor.black.cgColor
+        shadowView.layer.shadowOpacity = 0.3
+        shadowView.layer.shadowRadius = 1.5
+        shadowView.layer.shadowOffset = CGSize(width: 0.2,height: 0.2)
+        shadowView.layer.masksToBounds = false
+        shadowView.backgroundColor = .clear
         
-        mainBg.translatesAutoresizingMaskIntoConstraints = false
+        shadowView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.deactivate(self.currentConstraints)
         
         if cellPosition == CellPosition.top {
             
             self.currentConstraints = [
-                mainBg.bottomAnchor.constraint(equalTo: viewBg.bottomAnchor),
-                mainBg.heightAnchor.constraint(equalTo: self.heightAnchor, constant: -2)
+                shadowView.bottomAnchor.constraint(equalTo: viewBg.bottomAnchor)
             ]
+            
+            //add rounded corner shape and clip it
+            let path = UIBezierPath(roundedRect:shadowView.bounds,
+                                    byRoundingCorners:[.topRight, .topLeft],
+                                    cornerRadii: CGSize(width: 8, height:  8))
+            
+            let maskLayer = CAShapeLayer()
+            maskLayer.path = path.cgPath
+            mainBg.layer.mask = maskLayer
             
         } else if cellPosition == CellPosition.bottom {
             self.currentConstraints = [
-                mainBg.topAnchor.constraint(equalTo: viewBg.topAnchor),
-                mainBg.heightAnchor.constraint(equalTo: self.heightAnchor, constant: -2)
+                shadowView.topAnchor.constraint(equalTo: viewBg.topAnchor)
             ]
+            
+            
+            let path = UIBezierPath(roundedRect:shadowView.bounds,
+                                    byRoundingCorners:[.bottomRight, .bottomLeft],
+                                    cornerRadii: CGSize(width: 8, height:  8))
+            
+            let maskLayer = CAShapeLayer()
+            
+            maskLayer.path = path.cgPath
+            mainBg.layer.mask = maskLayer
+            mainBg.layer.masksToBounds = true
             
         } else {
             self.currentConstraints = [
-                mainBg.heightAnchor.constraint(equalTo: self.heightAnchor)
+                shadowView.heightAnchor.constraint(equalTo: self.heightAnchor)
             ]
+            
+            mainBg.layer.mask = nil
         }
         
         NSLayoutConstraint.activate(self.currentConstraints)

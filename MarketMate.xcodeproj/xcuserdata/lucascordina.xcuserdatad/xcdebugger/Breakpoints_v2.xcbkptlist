@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MarketMate/Controllers/DataViewController.swift"
-            timestampString = "545494703.1044199"
+            timestampString = "545496453.8334301"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "21"
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MarketMate/Views/ListIngredientCell.swift"
-            timestampString = "545494703.104479"
+            timestampString = "545496453.833486"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
             landmarkName = "updateUI()"
             landmarkType = "7">
             <Locations>
