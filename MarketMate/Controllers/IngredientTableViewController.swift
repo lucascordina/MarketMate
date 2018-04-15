@@ -90,33 +90,18 @@ class IngredientTableViewController: UITableViewController {
     // set cell
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "IngredientCell", for: indexPath) as! ListIngredientCell
-        
-        
         cell.ingredient = data[indexPath.row]
-        let currentSectionLength = categories[indexPath.section].ingredientCount
-        
-        //Round out the top corners of the first cell of each section
-        if indexPath[1] == 0 {
-            let topCornerRadiusPath = UIBezierPath(roundedRect: cell.bounds,
-                                                   byRoundingCorners: [.topLeft , .topRight],
-                                                   cornerRadii: CGSize(width: 8.0, height: 8.0))
-            let topCornerRadiusLayer = CAShapeLayer()
-            topCornerRadiusLayer.frame = cell.bounds
-            topCornerRadiusLayer.path = topCornerRadiusPath.cgPath
-            cell.layer.mask = topCornerRadiusLayer
-        } else if indexPath[1] == currentSectionLength-1 { //decreasing current section length by 1 to match the row counts, as the row is 0-index based
-            let bottomCornerRadiusPath = UIBezierPath(roundedRect: cell.bounds,
-                                                   byRoundingCorners: [.bottomLeft , .bottomRight],
-                                                   cornerRadii: CGSize(width: 8.0, height: 8.0))
-            let bottomCornerRadiusLayer = CAShapeLayer()
-            bottomCornerRadiusLayer.frame = cell.bounds
-            bottomCornerRadiusLayer.path = bottomCornerRadiusPath.cgPath
-            cell.layer.mask = bottomCornerRadiusLayer
-        }
-
         
         //remove cell highlighting on select
         cell.selectionStyle = UITableViewCellSelectionStyle.none
+        
+        if indexPath.row == 0 {
+            cell.cellPosition = CellPosition.top
+        } else if indexPath.row == categories[indexPath.section].ingredientCount - 1 {
+            cell.cellPosition = CellPosition.bottom
+        } else {
+            cell.cellPosition = CellPosition.middle
+        }
         
         return cell
     }
@@ -132,8 +117,6 @@ class IngredientTableViewController: UITableViewController {
         //            tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
         //        }
     }
-    
-    
     
     
 }
