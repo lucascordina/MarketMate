@@ -64,7 +64,7 @@
                                 </subviews>
                             </stackView>
                             <containerView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="ZAv-Eq-p6e">
-                                <rect key="frame" x="0.0" y="124" width="375" height="494"/>
+                                <rect key="frame" x="0.0" y="106" width="375" height="512"/>
                                 <connections>
                                     <segue destination="72s-ib-FAr" kind="embed" id="001-eW-WkI"/>
                                 </connections>
@@ -72,7 +72,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.96861571073532104" green="0.96862143278121948" blue="0.96863609552383423" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="ZAv-Eq-p6e" firstAttribute="top" secondItem="s2E-6E-0Ke" secondAttribute="bottom" constant="18" id="6ae-BA-75v"/>
+                            <constraint firstItem="ZAv-Eq-p6e" firstAttribute="top" secondItem="s2E-6E-0Ke" secondAttribute="bottom" id="6ae-BA-75v"/>
                             <constraint firstItem="VDM-ZT-K2m" firstAttribute="trailing" secondItem="ZAv-Eq-p6e" secondAttribute="trailing" id="EH5-A8-wgz"/>
                             <constraint firstItem="fGc-uM-ue7" firstAttribute="trailing" secondItem="s2E-6E-0Ke" secondAttribute="trailing" id="MFC-eR-DnD"/>
                             <constraint firstItem="ZAv-Eq-p6e" firstAttribute="leading" secondItem="VDM-ZT-K2m" secondAttribute="leading" id="NeB-8r-a1o"/>
@@ -95,7 +95,7 @@
             <objects>
                 <tableViewController id="72s-ib-FAr" customClass="IngredientTableViewController" customModule="MarketMate" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="56" sectionFooterHeight="28" id="egB-i6-96b">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="494"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="512"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <prototypes>
