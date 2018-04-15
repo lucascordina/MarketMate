@@ -60,7 +60,6 @@ class ListIngredientCell: UITableViewCell {
         self.bindTapEvents()
         
         self.addShadowConstraints(cellPosition: cellPosition)
-        self.sendSubview(toBack: mainBg)
 
     }
     
