@@ -12,8 +12,6 @@
 		993C84D3207BE9B300015F35 /* ListIngredientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993C84D2207BE9B300015F35 /* ListIngredientCell.swift */; };
 		993C84D6207BEB4700015F35 /* ListIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993C84D5207BEB4700015F35 /* ListIngredient.swift */; };
 		9961C66B2076B322008EC7C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961C66A2076B322008EC7C5 /* AppDelegate.swift */; };
-		9961C66F2076B322008EC7C5 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961C66E2076B322008EC7C5 /* DataViewController.swift */; };
-		9961C6712076B322008EC7C5 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961C6702076B322008EC7C5 /* ModelController.swift */; };
 		9961C6742076B322008EC7C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9961C6722076B322008EC7C5 /* Main.storyboard */; };
 		9961C6762076B322008EC7C5 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 9961C6752076B322008EC7C5 /* Contents.json */; };
 		9961C6792076B322008EC7C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9961C6772076B322008EC7C5 /* LaunchScreen.storyboard */; };
@@ -46,8 +44,6 @@
 		993C84D5207BEB4700015F35 /* ListIngredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListIngredient.swift; sourceTree = "<group>"; };
 		9961C6672076B322008EC7C5 /* MarketMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9961C66A2076B322008EC7C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9961C66E2076B322008EC7C5 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
-		9961C6702076B322008EC7C5 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		9961C6732076B322008EC7C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9961C6752076B322008EC7C5 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Contents.json; path = Assets.xcassets/AppIcon.appiconset/Contents.json; sourceTree = "<group>"; };
 		9961C6782076B322008EC7C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -89,8 +85,6 @@
 		993C84AC207913DC00015F35 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9961C66E2076B322008EC7C5 /* DataViewController.swift */,
-				9961C6702076B322008EC7C5 /* ModelController.swift */,
 				99EFDB82207BFD55000F4B5C /* IngredientTableViewController.swift */,
 			);
 			path = Controllers;
@@ -315,10 +309,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9961C6712076B322008EC7C5 /* ModelController.swift in Sources */,
 				993C84D3207BE9B300015F35 /* ListIngredientCell.swift in Sources */,
 				993C84D6207BEB4700015F35 /* ListIngredient.swift in Sources */,
-				9961C66F2076B322008EC7C5 /* DataViewController.swift in Sources */,
 				99EFDB83207BFD55000F4B5C /* IngredientTableViewController.swift in Sources */,
 				9961C66B2076B322008EC7C5 /* AppDelegate.swift in Sources */,
 				993C84CF207A885800015F35 /* UIButtonRadiusExtension.swift in Sources */,

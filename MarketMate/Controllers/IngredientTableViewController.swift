@@ -12,7 +12,7 @@ class IngredientTableViewController: UITableViewController {
     
     
     var dataObject: String = ""
-    //mock
+    // mock
     private var data: [ListIngredient] = [
         ListIngredient(title: "Eggs", amount: "6", amountType: "", hasSubstitute: false, recipeColor: "blue", isChecked: false),
         ListIngredient(title: "Milk", amount: "200", amountType: "ml", hasSubstitute: true, recipeColor: "", isChecked: true),
@@ -69,7 +69,7 @@ class IngredientTableViewController: UITableViewController {
         label.font = UIFont.boldSystemFont(ofSize: 34)
         label.sizeToFit()
         
-        //align title with cell content
+        // align title with cell content
         label.center.y = headerView.center.y
         label.center.x = 85
         
@@ -82,7 +82,7 @@ class IngredientTableViewController: UITableViewController {
         return categories.count
     }
     
-    //allocate cells to category
+    // allocate cells to category
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return categories[section].ingredientCount
     }
@@ -92,11 +92,11 @@ class IngredientTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "IngredientCell", for: indexPath) as! ListIngredientCell
         cell.ingredient = data[indexPath.row]
         
-        //remove cell highlighting on select
+        // remove cell highlighting on select
         cell.selectionStyle = UITableViewCellSelectionStyle.none
         
+        
         switch indexPath.row {
-            // first row in section
             case 0:
                 cell.cellPosition = .top
             //last row in section, decreased by 1 due to 0 index array
@@ -122,11 +122,11 @@ class IngredientTableViewController: UITableViewController {
     }
     
     private func StylizeTable(){
-        //set default row height
+        // set default row height
         self.tableView.rowHeight = 58;
         self.tableView.showsVerticalScrollIndicator = false
         
-        //add a false view height to make the section headers float
+        // add a false view height to make the section headers float
         let dummyViewHeight = CGFloat(sectionHeaderHeight)
         self.tableView.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: self.tableView.bounds.size.width, height: dummyViewHeight))
         self.tableView.contentInset = UIEdgeInsetsMake(-dummyViewHeight, 0, 0, 0)
