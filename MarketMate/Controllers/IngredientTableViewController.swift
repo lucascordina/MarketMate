@@ -40,13 +40,13 @@ class IngredientTableViewController: UITableViewController {
         ("Meat", 10)
     ]
     
+    private let sectionHeaderHeight = 58;
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //set default row height
-        self.tableView.rowHeight = 58;
-        self.tableView.showsVerticalScrollIndicator = false
+        self.StylizeTable()
     }
     
     override func didReceiveMemoryWarning() {
@@ -95,12 +95,15 @@ class IngredientTableViewController: UITableViewController {
         //remove cell highlighting on select
         cell.selectionStyle = UITableViewCellSelectionStyle.none
         
-        if indexPath.row == 0 {
-            cell.cellPosition = CellPosition.top
-        } else if indexPath.row == categories[indexPath.section].ingredientCount - 1 {
-            cell.cellPosition = CellPosition.bottom
-        } else {
-            cell.cellPosition = CellPosition.middle
+        switch indexPath.row {
+            // first row in section
+            case 0:
+                cell.cellPosition = .top
+            //last row in section, decreased by 1 due to 0 index array
+            case categories[indexPath.section].ingredientCount - 1:
+                cell.cellPosition = .bottom
+            default:
+                cell.cellPosition = .middle
         }
         
         return cell
@@ -118,5 +121,15 @@ class IngredientTableViewController: UITableViewController {
         //        }
     }
     
+    private func StylizeTable(){
+        //set default row height
+        self.tableView.rowHeight = 58;
+        self.tableView.showsVerticalScrollIndicator = false
+        
+        //add a false view height to make the section headers float
+        let dummyViewHeight = CGFloat(sectionHeaderHeight)
+        self.tableView.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: self.tableView.bounds.size.width, height: dummyViewHeight))
+        self.tableView.contentInset = UIEdgeInsetsMake(-dummyViewHeight, 0, 0, 0)
+    }
     
 }
