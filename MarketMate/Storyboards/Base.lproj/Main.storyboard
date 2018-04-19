@@ -112,14 +112,14 @@
                                                 <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pjX-zV-Vdw" userLabel="mainBg">
                                                     <rect key="frame" x="0.0" y="0.0" width="355" height="48.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Milk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="de3-aY-0FG">
-                                                            <rect key="frame" x="45" y="8" width="31.5" height="20"/>
+                                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Milk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="de3-aY-0FG">
+                                                            <rect key="frame" x="52" y="8" width="31.5" height="20"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YS4-sO-TMd">
-                                                            <rect key="frame" x="80.5" y="15" width="8" height="8"/>
+                                                            <rect key="frame" x="87.5" y="15" width="8" height="8"/>
                                                             <color key="backgroundColor" name="primaryColor"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="8" id="MSX-9i-cDl"/>
@@ -138,7 +138,7 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </button>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 gr." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbS-G4-oGT">
-                                                            <rect key="frame" x="46" y="30" width="36.5" height="15"/>
+                                                            <rect key="frame" x="53" y="30" width="36.5" height="15"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -154,29 +154,29 @@
                                                     </constraints>
                                                 </view>
                                                 <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="22" placeholderIntrinsicHeight="22" image="checkbox-unchecked" translatesAutoresizingMaskIntoConstraints="NO" id="BTg-gz-8Jy">
-                                                    <rect key="frame" x="8" y="13" width="22" height="22"/>
+                                                    <rect key="frame" x="15" y="13" width="22" height="22"/>
                                                 </imageView>
                                                 <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="22" placeholderIntrinsicHeight="22" image="checkbox-checked" translatesAutoresizingMaskIntoConstraints="NO" id="fi7-c2-7TL">
-                                                    <rect key="frame" x="8" y="13" width="22" height="22"/>
+                                                    <rect key="frame" x="15" y="13" width="22" height="22"/>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bd6-Vy-f8p">
-                                                    <rect key="frame" x="332" y="13" width="11" height="22"/>
+                                                    <rect key="frame" x="329" y="13" width="11" height="22"/>
                                                     <state key="normal" image="collapsed-carat-side"/>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="BTg-gz-8Jy" firstAttribute="centerY" secondItem="pjX-zV-Vdw" secondAttribute="centerY" id="1gZ-dy-27a"/>
-                                                <constraint firstItem="fi7-c2-7TL" firstAttribute="leading" secondItem="C8c-1a-kG2" secondAttribute="leading" constant="8" id="4yy-Hu-h9T"/>
+                                                <constraint firstItem="fi7-c2-7TL" firstAttribute="leading" secondItem="C8c-1a-kG2" secondAttribute="leading" constant="15" id="4yy-Hu-h9T"/>
                                                 <constraint firstItem="de3-aY-0FG" firstAttribute="leading" secondItem="fi7-c2-7TL" secondAttribute="trailing" constant="15" id="784-v9-tqP"/>
                                                 <constraint firstItem="pjX-zV-Vdw" firstAttribute="width" secondItem="C8c-1a-kG2" secondAttribute="width" id="BVP-n1-H9O"/>
-                                                <constraint firstAttribute="trailing" secondItem="Bd6-Vy-f8p" secondAttribute="trailing" constant="12" id="IyA-Z5-g03"/>
+                                                <constraint firstAttribute="trailing" secondItem="Bd6-Vy-f8p" secondAttribute="trailing" constant="15" id="IyA-Z5-g03"/>
                                                 <constraint firstItem="Bd6-Vy-f8p" firstAttribute="centerY" secondItem="pjX-zV-Vdw" secondAttribute="centerY" id="Jbd-xr-aG0"/>
                                                 <constraint firstItem="fbS-G4-oGT" firstAttribute="leading" secondItem="fi7-c2-7TL" secondAttribute="trailing" constant="16" id="KU6-gG-MQJ"/>
                                                 <constraint firstItem="pjX-zV-Vdw" firstAttribute="centerX" secondItem="C8c-1a-kG2" secondAttribute="centerX" id="iRQ-a6-Mbh"/>
                                                 <constraint firstItem="fi7-c2-7TL" firstAttribute="centerY" secondItem="pjX-zV-Vdw" secondAttribute="centerY" id="kaN-74-6Ly"/>
                                                 <constraint firstItem="pjX-zV-Vdw" firstAttribute="centerY" secondItem="C8c-1a-kG2" secondAttribute="centerY" id="mdJ-rn-Vw3"/>
-                                                <constraint firstItem="BTg-gz-8Jy" firstAttribute="leading" secondItem="C8c-1a-kG2" secondAttribute="leading" constant="8" id="sKH-hf-8XJ"/>
+                                                <constraint firstItem="BTg-gz-8Jy" firstAttribute="leading" secondItem="C8c-1a-kG2" secondAttribute="leading" constant="15" id="sKH-hf-8XJ"/>
                                                 <constraint firstItem="pjX-zV-Vdw" firstAttribute="height" secondItem="C8c-1a-kG2" secondAttribute="height" id="xMG-rj-Jfw"/>
                                             </constraints>
                                         </view>

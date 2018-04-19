@@ -128,18 +128,16 @@ class ListIngredientCell: UITableViewCell {
     }
     
     private func bindTapEvents() {
-        let checkmarkCheckedGesture = UITapGestureRecognizer(target: self, action: #selector(ListIngredientCell.checkmarkCheckedTapped(_:)))
-        checkmarkCheckedGesture.numberOfTapsRequired = 1
-        checkmarkCheckedGesture.numberOfTouchesRequired = 1
-        checkmarkChecked.isUserInteractionEnabled = true
-        checkmarkChecked.addGestureRecognizer(checkmarkCheckedGesture)
-        
-        
-        let checkmarkUncheckedGesture = UITapGestureRecognizer(target: self, action: #selector(ListIngredientCell.checkmarkUncheckedTapped(_:)))
-        checkmarkUncheckedGesture.numberOfTapsRequired = 1
-        checkmarkUncheckedGesture.numberOfTouchesRequired = 1
-        checkmarkUnchecked.isUserInteractionEnabled = true
-        checkmarkUnchecked.addGestureRecognizer(checkmarkUncheckedGesture)
+        checkmarkChecked.addGestureRecognizer(createCheckGestureRecognizer())
+        checkmarkUnchecked.addGestureRecognizer(createCheckGestureRecognizer())
+    }
+    
+    // Gesture Recognizers cannot be reused, so we must generate one for each element
+    private func createCheckGestureRecognizer() -> UITapGestureRecognizer {
+        let gestureCheckRecognizer = UITapGestureRecognizer(target: self, action: #selector(ListIngredientCell.toggleIsChecked(_:)))
+        gestureCheckRecognizer.numberOfTapsRequired = 1
+        gestureCheckRecognizer.numberOfTouchesRequired = 1
+        return gestureCheckRecognizer
     }
     
     private func updateCheckedUI() {
@@ -155,13 +153,10 @@ class ListIngredientCell: UITableViewCell {
         }
     }
     
-    @objc func checkmarkCheckedTapped(_ sender: UITapGestureRecognizer) {
-        ingredient?.isChecked = false
+    @objc func toggleIsChecked(_ sender: UITapGestureRecognizer) {
+        ingredient?.isChecked = (ingredient?.isChecked)! ? false : true
         updateUI()
     }
     
-    @objc func checkmarkUncheckedTapped(_ sender: UITapGestureRecognizer) {
-        ingredient?.isChecked = true
-        updateUI()
-    }
+
 }
